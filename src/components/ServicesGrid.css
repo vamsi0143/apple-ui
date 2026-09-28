@@ -1,0 +1,15 @@
+.services-grid {
+  padding: 48px 0;
+}
+
+.services-grid__inner {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+}
+
+@media (max-width: 734px) {
+  .services-grid__inner {
+    grid-template-columns: 1fr;
+  }
+}

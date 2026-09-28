@@ -1,0 +1,179 @@
+/* =========================================
+   GUIDED TOUR SECTION
+========================================= */
+
+.guided-tour {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+}
+
+/* Full-width background image section */
+.guided-tour__card {
+  position: relative;
+
+  width: 100%;
+  min-height: 600px;
+
+  display: flex;
+  align-items: center;
+
+  overflow: hidden;
+
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+/* Dark gradient over the background image */
+.guided-tour__overlay {
+  position: absolute;
+  inset: 0;
+
+  background: linear-gradient(90deg,
+      rgba(0, 0, 0, 0.65) 0%,
+      rgba(0, 0, 0, 0.35) 35%,
+      rgba(0, 0, 0, 0.12) 60%,
+      rgba(0, 0, 0, 0) 100%);
+
+  z-index: 1;
+}
+
+/* Text content */
+.guided-tour__text {
+  position: relative;
+  z-index: 2;
+
+  color: var(--color-white);
+
+  padding-left: 8%;
+  padding-right: 20px;
+
+  max-width: 430px;
+}
+
+/* Small heading */
+.guided-tour__kicker {
+  font-size: 22px;
+  font-weight: 500;
+
+  margin: 0 0 8px;
+
+  letter-spacing: -0.2px;
+}
+
+/* Main heading */
+.guided-tour__title {
+  font-size: 48px;
+  font-weight: 600;
+
+  line-height: 1.08;
+
+  margin: 0 0 28px;
+
+  letter-spacing: -1px;
+}
+
+/* =========================================
+   DESKTOP LARGE SCREENS
+========================================= */
+
+@media (min-width: 1200px) {
+  .guided-tour__card {
+    min-height: 680px;
+  }
+
+  .guided-tour__text {
+    padding-left: 10%;
+  }
+
+  .guided-tour__kicker {
+    font-size: 24px;
+  }
+
+  .guided-tour__title {
+    font-size: 56px;
+  }
+}
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 1024px) {
+  .guided-tour__card {
+    min-height: 550px;
+
+    background-position: center center;
+  }
+
+  .guided-tour__text {
+    padding-left: 6%;
+  }
+
+  .guided-tour__title {
+    font-size: 42px;
+  }
+}
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 734px) {
+  .guided-tour__card {
+    min-height: 520px;
+
+    align-items: flex-start;
+
+    background-position: center center;
+  }
+
+  .guided-tour__overlay {
+    background: linear-gradient(180deg,
+        rgba(0, 0, 0, 0.55) 0%,
+        rgba(0, 0, 0, 0.25) 45%,
+        rgba(0, 0, 0, 0.05) 100%);
+  }
+
+  .guided-tour__text {
+    padding: 60px 24px 30px;
+
+    max-width: 100%;
+  }
+
+  .guided-tour__kicker {
+    font-size: 18px;
+  }
+
+  .guided-tour__title {
+    font-size: 34px;
+
+    line-height: 1.1;
+
+    margin-bottom: 22px;
+  }
+}
+
+/* =========================================
+   SMALL MOBILE
+========================================= */
+
+@media (max-width: 480px) {
+  .guided-tour__card {
+    min-height: 480px;
+  }
+
+  .guided-tour__text {
+    padding: 48px 20px 24px;
+  }
+
+  .guided-tour__kicker {
+    font-size: 17px;
+  }
+
+  .guided-tour__title {
+    font-size: 30px;
+  }
+}

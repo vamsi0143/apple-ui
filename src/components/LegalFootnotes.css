@@ -1,0 +1,16 @@
+.legal-footnotes {
+  padding: 32px 0;
+  border-top: 1px solid var(--color-gray-border);
+}
+
+.legal-footnotes__item {
+  font-size: 11px;
+  line-height: 1.6;
+  color: var(--color-gray-text);
+  margin: 0 0 14px;
+  max-width: 900px;
+}
+
+.legal-footnotes__item sup {
+  font-size: 9px;
+}

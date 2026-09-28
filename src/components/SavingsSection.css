@@ -1,0 +1,44 @@
+.savings {
+  background: var(--color-gray-bg);
+  padding: 48px 0 64px;
+  text-align: center;
+}
+
+.savings__title {
+  font-size: 32px;
+  font-weight: 600;
+  margin: 0 0 28px;
+}
+
+.savings__card {
+  background: var(--color-white);
+  border-radius: var(--radius-lg);
+  padding: 40px 24px 0;
+  overflow: hidden;
+}
+
+.savings__card-title {
+  font-size: 24px;
+  font-weight: 600;
+  margin: 0 0 12px;
+  line-height: 1.25;
+}
+
+.savings__card-copy {
+  font-size: 14px;
+  color: var(--color-gray-text);
+  max-width: 380px;
+  margin: 0 auto 6px;
+  line-height: 1.5;
+}
+
+.savings__image {
+  width: 100%;
+  margin-top: 24px;
+}
+
+@media (max-width: 734px) {
+  .savings__card-title {
+    font-size: 20px;
+  }
+}

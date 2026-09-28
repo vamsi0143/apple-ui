@@ -1,0 +1,528 @@
+/* =====================================================
+   MAIN WRAPPER
+===================================================== */
+
+.dual-promo {
+  width: 100%;
+}
+
+
+/* =====================================================
+   SECTIONS
+===================================================== */
+
+.dual-promo-section {
+  width: 100%;
+  overflow: hidden;
+}
+
+.dual-promo-section--dark {
+  background: #000;
+  color: #fff;
+}
+
+.dual-promo-section--light {
+  background: #fff;
+  color: #1d1d1f;
+}
+
+
+/* =====================================================
+   COMMON CARD
+===================================================== */
+
+.dual-promo__card {
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+
+/* =====================================================
+   SECTION 1 - iPHONE 14 PRO
+   CONTENT TOP + IMAGE BELOW
+===================================================== */
+
+.dual-promo__card--dark {
+  min-height: 750px;
+
+  padding: 70px 50px 0;
+
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+  justify-content: flex-start;
+
+  background: #000;
+  color: #fff;
+}
+
+
+/* =====================================================
+   SECTION 2 - iPHONE SE
+   CONTENT LEFT + IMAGE RIGHT
+===================================================== */
+
+.dual-promo__card--light {
+  min-height: 600px;
+
+  padding: 60px 70px;
+
+  display: grid;
+  grid-template-columns: 42% 58%;
+  align-items: center;
+
+  background: #fff;
+  color: #1d1d1f;
+}
+
+
+/* =====================================================
+   CONTENT
+===================================================== */
+
+.dual-promo__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+
+/* Section 2 content LEFT */
+
+.dual-promo__card--light .dual-promo__content {
+  align-items: flex-start;
+  text-align: left;
+  padding-right: 30px;
+}
+
+
+/* =====================================================
+   KICKER
+===================================================== */
+
+.dual-promo__kicker {
+  font-size: 21px;
+  font-weight: 500;
+
+  margin: 0 0 8px;
+
+  line-height: 1.2;
+}
+
+
+/* =====================================================
+   TITLE
+===================================================== */
+
+.dual-promo__title {
+  font-size: 48px;
+  font-weight: 600;
+
+  line-height: 1.1;
+  letter-spacing: -1.5px;
+
+  margin: 0 0 16px;
+}
+
+
+/* =====================================================
+   BLUE TEXT
+===================================================== */
+
+.dual-promo__title--blue {
+  color: #0071e3;
+}
+
+
+/* =====================================================
+   PRICE
+===================================================== */
+
+.dual-promo__price {
+  max-width: 420px;
+
+  font-size: 14px;
+  line-height: 1.45;
+
+  margin: 0 0 22px;
+
+  opacity: 0.8;
+}
+
+.dual-promo__price sup {
+  font-size: 8px;
+  vertical-align: super;
+}
+
+
+/* =====================================================
+   ACTIONS
+===================================================== */
+
+.dual-promo__actions {
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+
+  gap: 22px;
+}
+
+
+/* =====================================================
+   BUY BUTTON
+===================================================== */
+
+.btn-pill {
+  border: none;
+
+  border-radius: 999px;
+
+  padding: 10px 22px;
+
+  font-size: 14px;
+  font-weight: 500;
+
+  cursor: pointer;
+
+  transition:
+    transform 0.2s ease,
+    opacity 0.2s ease;
+}
+
+.btn-pill:hover {
+  transform: scale(1.04);
+  opacity: 0.9;
+}
+
+.btn-pill--primary {
+  background: #0071e3;
+  color: #fff;
+}
+
+
+/* =====================================================
+   LEARN MORE LINK
+===================================================== */
+
+.link-arrow {
+  color: #0071e3;
+
+  text-decoration: none;
+
+  font-size: 14px;
+
+  white-space: nowrap;
+
+  transition: opacity 0.2s ease;
+}
+
+.link-arrow:hover {
+  opacity: 0.65;
+}
+
+.link-arrow::after {
+  content: " ›";
+  font-size: 18px;
+}
+
+
+/* Dark background link */
+
+.link-arrow--light {
+  color: #2997ff;
+}
+
+
+/* =====================================================
+   IMAGE AREA
+===================================================== */
+
+.dual-promo__visual {
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  overflow: hidden;
+}
+
+
+/* Section 1 image BELOW content */
+
+.dual-promo__card--dark .dual-promo__visual {
+  width: 100%;
+
+  height: 500px;
+
+  margin-top: 45px;
+}
+
+
+/* Section 2 image RIGHT */
+
+.dual-promo__card--light .dual-promo__visual {
+  width: 100%;
+
+  height: 500px;
+}
+
+
+/* =====================================================
+   PRODUCT IMAGE
+===================================================== */
+
+.dual-promo__image {
+  display: block;
+
+  width: 100%;
+
+  height: auto;
+
+  object-fit: contain;
+
+  transition: transform 0.4s ease;
+}
+
+
+/* Section 1 large image */
+
+.dual-promo__card--dark .dual-promo__image {
+  max-width: 1100px;
+  height: 500px;
+}
+
+
+/* Section 2 large image */
+
+.dual-promo__card--light .dual-promo__image {
+  max-width: 800px;
+  height: 500px;
+}
+
+
+/* Hover */
+
+.dual-promo__visual:hover .dual-promo__image {
+  transform: scale(1.02);
+}
+
+
+/* =====================================================
+   LARGE DESKTOP
+===================================================== */
+
+@media (min-width: 1200px) {
+
+  .dual-promo__card--dark {
+    min-height: 800px;
+    padding: 75px 60px 0;
+  }
+
+  .dual-promo__card--dark .dual-promo__visual {
+    height: 540px;
+    margin-top: 50px;
+  }
+
+  .dual-promo__card--dark .dual-promo__image {
+    max-width: 1200px;
+    height: 540px;
+  }
+
+
+  .dual-promo__card--light {
+    min-height: 650px;
+    padding: 70px 80px;
+  }
+
+  .dual-promo__title {
+    font-size: 52px;
+  }
+
+  .dual-promo__card--light .dual-promo__visual {
+    height: 540px;
+  }
+
+  .dual-promo__card--light .dual-promo__image {
+    max-width: 850px;
+    height: 540px;
+  }
+}
+
+
+/* =====================================================
+   TABLET
+===================================================== */
+
+@media (max-width: 900px) {
+
+  /* Section 1 */
+
+  .dual-promo__card--dark {
+    min-height: 650px;
+    padding: 60px 30px 0;
+  }
+
+  .dual-promo__title {
+    font-size: 40px;
+  }
+
+  .dual-promo__kicker {
+    font-size: 19px;
+  }
+
+  .dual-promo__card--dark .dual-promo__visual {
+    height: 400px;
+    margin-top: 40px;
+  }
+
+  .dual-promo__card--dark .dual-promo__image {
+    height: 400px;
+  }
+
+
+  /* Section 2 */
+
+  .dual-promo__card--light {
+    min-height: 500px;
+
+    padding: 45px 30px;
+
+    grid-template-columns: 45% 55%;
+  }
+
+  .dual-promo__card--light .dual-promo__visual {
+    height: 380px;
+  }
+
+  .dual-promo__card--light .dual-promo__image {
+    height: 380px;
+  }
+}
+
+
+/* =====================================================
+   MOBILE
+===================================================== */
+
+@media (max-width: 734px) {
+
+  .dual-promo__card--dark,
+  .dual-promo__card--light {
+    display: flex;
+
+    flex-direction: column;
+
+    min-height: auto;
+
+    padding: 45px 15px 0;
+
+    align-items: center;
+  }
+
+
+  /* Content */
+
+  .dual-promo__content,
+  .dual-promo__card--light .dual-promo__content {
+    width: 100%;
+
+    align-items: center;
+
+    text-align: center;
+
+    padding: 0 10px;
+  }
+
+
+  .dual-promo__kicker {
+    font-size: 17px;
+  }
+
+
+  .dual-promo__title {
+    font-size: 32px;
+    letter-spacing: -0.9px;
+  }
+
+
+  .dual-promo__price {
+    font-size: 12px;
+    max-width: 320px;
+  }
+
+
+  /* Image below content */
+
+  .dual-promo__visual,
+  .dual-promo__card--dark .dual-promo__visual,
+  .dual-promo__card--light .dual-promo__visual {
+    width: 100%;
+
+    height: 320px;
+
+    margin-top: 35px;
+
+    order: 2;
+  }
+
+
+  .dual-promo__image,
+  .dual-promo__card--dark .dual-promo__image,
+  .dual-promo__card--light .dual-promo__image {
+    width: 100%;
+
+    height: 320px;
+
+    max-width: 550px;
+  }
+}
+
+
+/* =====================================================
+   SMALL MOBILE
+===================================================== */
+
+@media (max-width: 480px) {
+
+  .dual-promo__card--dark,
+  .dual-promo__card--light {
+    padding: 40px 12px 0;
+  }
+
+  .dual-promo__title {
+    font-size: 28px;
+  }
+
+  .dual-promo__kicker {
+    font-size: 16px;
+  }
+
+  .dual-promo__price {
+    font-size: 12px;
+    max-width: 300px;
+  }
+
+  .dual-promo__actions {
+    gap: 15px;
+  }
+
+  .dual-promo__visual,
+  .dual-promo__card--dark .dual-promo__visual,
+  .dual-promo__card--light .dual-promo__visual {
+    height: 290px;
+    margin-top: 30px;
+  }
+
+  .dual-promo__image,
+  .dual-promo__card--dark .dual-promo__image,
+  .dual-promo__card--light .dual-promo__image {
+    height: 290px;
+  }
+}

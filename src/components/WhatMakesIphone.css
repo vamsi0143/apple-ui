@@ -1,0 +1,222 @@
+/* =====================================================
+   WHAT MAKES IPHONE SECTION
+===================================================== */
+
+.what-makes {
+  width: 100%;
+
+  background: var(--color-gray-bg);
+
+  padding: 20px 0 70px;
+
+  text-align: center;
+
+  overflow: hidden;
+}
+
+
+/* =====================================================
+   SECTION INNER
+===================================================== */
+
+.what-makes .section-inner {
+  width: 100%;
+
+  max-width: 1400px;
+
+  margin: 0 auto;
+
+  padding: 0 24px;
+
+  box-sizing: border-box;
+}
+
+
+/* =====================================================
+   SECTION TITLE
+===================================================== */
+
+.what-makes__title {
+  font-size: 38px;
+
+  font-weight: 600;
+
+  line-height: 1.15;
+
+  letter-spacing: -0.8px;
+
+  color: var(--color-black, #1d1d1f);
+
+  margin: 28px 0 40px;
+}
+
+
+/* =====================================================
+   FULL WIDTH FEATURE
+===================================================== */
+
+.what-makes__feature {
+  width: 100%;
+
+  display: block;
+
+  margin: 0 auto;
+}
+
+
+/* =====================================================
+   FEATURE TILE OVERRIDE
+===================================================== */
+
+/*
+   This makes the FeatureTile fill the complete
+   available width instead of behaving like a
+   small grid item.
+*/
+
+.what-makes__feature>* {
+  width: 100%;
+
+  max-width: none;
+
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+/* =====================================================
+   FEATURE IMAGE
+===================================================== */
+
+.what-makes__feature img {
+  display: block;
+
+  width: 100%;
+
+  max-width: 1200px;
+
+  height: auto;
+
+  margin: 0 auto;
+
+  object-fit: contain;
+}
+
+
+/* =====================================================
+   DESKTOP
+===================================================== */
+
+@media (min-width: 1100px) {
+
+  .what-makes {
+    padding-top: 24px;
+    padding-bottom: 90px;
+  }
+
+  .what-makes .section-inner {
+    padding: 0 40px;
+  }
+
+  .what-makes__title {
+    font-size: 42px;
+
+    margin-top: 30px;
+
+    margin-bottom: 48px;
+  }
+
+  .what-makes__feature {
+    min-height: 500px;
+  }
+
+  .what-makes__feature img {
+    max-width: 1250px;
+  }
+
+}
+
+
+/* =====================================================
+   TABLET
+===================================================== */
+
+@media (max-width: 1099px) {
+
+  .what-makes .section-inner {
+    padding: 0 20px;
+  }
+
+  .what-makes__title {
+    font-size: 34px;
+
+    margin-bottom: 36px;
+  }
+
+  .what-makes__feature img {
+    max-width: 100%;
+  }
+
+}
+
+
+/* =====================================================
+   MOBILE
+===================================================== */
+
+@media (max-width: 734px) {
+
+  .what-makes {
+    padding: 15px 0 50px;
+  }
+
+  .what-makes .section-inner {
+    padding: 0 12px;
+  }
+
+  .what-makes__title {
+    font-size: 28px;
+
+    line-height: 1.15;
+
+    letter-spacing: -0.5px;
+
+    margin: 22px 0 30px;
+  }
+
+  .what-makes__feature {
+    width: 100%;
+  }
+
+  .what-makes__feature img {
+    width: 100%;
+
+    max-width: 100%;
+  }
+
+}
+
+
+/* =====================================================
+   SMALL MOBILE
+===================================================== */
+
+@media (max-width: 480px) {
+
+  .what-makes {
+    padding-bottom: 40px;
+  }
+
+  .what-makes .section-inner {
+    padding: 0 8px;
+  }
+
+  .what-makes__title {
+    font-size: 25px;
+
+    margin-top: 20px;
+
+    margin-bottom: 24px;
+  }
+
+}

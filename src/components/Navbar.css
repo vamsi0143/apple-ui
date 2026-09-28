@@ -1,0 +1,464 @@
+/* =====================================================
+   MAIN NAVBAR
+===================================================== */
+
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+
+  width: 100%;
+
+  background: rgba(255, 255, 255, 0.94);
+
+  backdrop-filter: saturate(180%) blur(20px);
+  -webkit-backdrop-filter: saturate(180%) blur(20px);
+
+  border-bottom: 1px solid #e5e5e5;
+}
+
+
+/* =====================================================
+   TOP APPLE NAVIGATION
+===================================================== */
+
+.navbar__top {
+  width: 100%;
+  height: 44px;
+
+  background: rgba(255, 255, 255, 0.96);
+}
+
+.navbar__top-inner {
+  height: 44px;
+
+  max-width: 1000px;
+
+  margin: 0 auto;
+
+  padding: 0 20px;
+
+  display: flex;
+  align-items: center;
+}
+
+
+/* =====================================================
+   APPLE LOGO
+===================================================== */
+
+.navbar__apple-logo {
+  width: 18px;
+  height: 22px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  flex-shrink: 0;
+
+  text-decoration: none;
+}
+
+.navbar__apple-logo img {
+  width: 20px;
+  height: 26px;
+
+  display: block;
+
+  object-fit: contain;
+}
+
+
+/* =====================================================
+   TOP NAV LINKS
+===================================================== */
+
+.navbar__main-links {
+  flex: 1;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  margin-left: 34px;
+  margin-right: 28px;
+}
+
+.navbar__main-link {
+  color: #1d1d1f;
+
+  text-decoration: none;
+
+  font-size: 10px;
+  font-weight: 400;
+
+  white-space: nowrap;
+
+  transition: opacity 0.2s ease;
+}
+
+.navbar__main-link:hover {
+  opacity: 0.55;
+}
+
+
+/* =====================================================
+   SEARCH + BAG
+===================================================== */
+
+.navbar__icon-button {
+  width: 30px;
+  height: 30px;
+
+  padding: 0;
+
+  border: none;
+  background: transparent;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  cursor: pointer;
+}
+
+.navbar__icon-button img {
+  width: 20px;
+  height: 26px;
+
+  object-fit: contain;
+}
+
+.navbar__icon-button+.navbar__icon-button {
+  margin-left: 10px;
+}
+
+
+/* =====================================================
+   MOBILE TOGGLE
+===================================================== */
+
+.navbar__toggle {
+  display: none;
+
+  width: 30px;
+  height: 30px;
+
+  margin-left: auto;
+
+  border: none;
+  background: transparent;
+
+  cursor: pointer;
+
+  padding: 5px;
+
+  flex-direction: column;
+  justify-content: center;
+
+  gap: 5px;
+}
+
+.navbar__toggle span {
+  display: block;
+
+  width: 18px;
+  height: 1.5px;
+
+  background: #1d1d1f;
+
+  transition: transform 0.25s ease;
+}
+
+.navbar__toggle--open span:first-child {
+  transform: translateY(3.25px) rotate(45deg);
+}
+
+.navbar__toggle--open span:last-child {
+  transform: translateY(-3.25px) rotate(-45deg);
+}
+
+
+/* =====================================================
+   MOBILE MENU
+===================================================== */
+
+.navbar__mobile-menu {
+  display: none;
+}
+
+
+/* =====================================================
+   SECONDARY IPHONE NAVIGATION
+===================================================== */
+
+.iphone-nav {
+  width: 100%;
+
+  background: #f5f5f7;
+
+  border-top: 1px solid #eeeeee;
+}
+
+.iphone-nav__inner {
+  max-width: 1000px;
+
+  min-height: 78px;
+
+  margin: 0 auto;
+
+  padding: 8px 18px 6px;
+
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+
+  gap: 10px;
+
+  overflow-x: auto;
+
+  scrollbar-width: none;
+}
+
+.iphone-nav__inner::-webkit-scrollbar {
+  display: none;
+}
+
+
+/* =====================================================
+   SECONDARY NAV ITEM
+===================================================== */
+
+.iphone-nav__item {
+  min-width: 55px;
+
+  flex-shrink: 0;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  text-align: center;
+
+  text-decoration: none;
+
+  color: #1d1d1f;
+
+  transition:
+    color 0.2s ease,
+    transform 0.2s ease;
+}
+
+.iphone-nav__item:hover {
+  color: #06c;
+}
+
+
+/* =====================================================
+   ICON
+===================================================== */
+
+.iphone-nav__icon {
+  height: 42px;
+
+  width: 58px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin-bottom: 3px;
+}
+
+.iphone-nav__icon img {
+  display: block;
+
+  width: auto;
+  height: 40px;
+
+  max-width: 56px;
+
+  object-fit: contain;
+}
+
+
+/* =====================================================
+   ITEM NAME
+===================================================== */
+
+.iphone-nav__name {
+  display: block;
+
+  font-size: 9px;
+  line-height: 12px;
+
+  white-space: nowrap;
+}
+
+
+/* =====================================================
+   NEW BADGE
+===================================================== */
+
+.iphone-nav__badge {
+  display: block;
+
+  margin-top: 1px;
+
+  font-size: 8px;
+  line-height: 10px;
+
+  color: #bf4800;
+}
+
+
+/* =====================================================
+   TABLET
+===================================================== */
+
+@media (max-width: 1000px) {
+
+  .navbar__top-inner {
+    max-width: 100%;
+
+    padding: 0 22px;
+  }
+
+  .navbar__main-links {
+    margin-left: 25px;
+    margin-right: 18px;
+
+    gap: 18px;
+  }
+
+  .navbar__main-link {
+    font-size: 9px;
+  }
+
+  .iphone-nav__inner {
+    justify-content: flex-start;
+  }
+}
+
+
+/* =====================================================
+   MOBILE
+===================================================== */
+
+@media (max-width: 834px) {
+
+  .navbar__top {
+    height: 48px;
+  }
+
+  .navbar__top-inner {
+    height: 48px;
+
+    padding: 0 18px;
+  }
+
+  .navbar__main-links {
+    display: none;
+  }
+
+  .navbar__icon-button {
+    display: none;
+  }
+
+  .navbar__apple-logo {
+    width: 20px;
+  }
+
+  .navbar__toggle {
+    display: flex;
+  }
+
+
+  /* Mobile menu */
+
+  .navbar__mobile-menu {
+    display: none;
+
+    background: #fff;
+
+    padding: 10px 24px 22px;
+
+    border-top: 1px solid #eeeeee;
+  }
+
+  .navbar__mobile-menu--open {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 18px;
+  }
+
+  .navbar__mobile-link {
+    color: #1d1d1f;
+
+    text-decoration: none;
+
+    font-size: 18px;
+    font-weight: 500;
+  }
+
+
+  /* Secondary nav */
+
+  .iphone-nav__inner {
+    min-height: 82px;
+
+    padding: 9px 16px 7px;
+
+    gap: 18px;
+
+    justify-content: flex-start;
+  }
+
+  .iphone-nav__item {
+    min-width: 60px;
+  }
+
+  .iphone-nav__icon {
+    height: 40px;
+
+    width: 55px;
+  }
+
+  .iphone-nav__icon img {
+    height: 37px;
+
+    max-width: 52px;
+  }
+
+  .iphone-nav__name {
+    font-size: 9px;
+  }
+}
+
+
+/* =====================================================
+   SMALL MOBILE
+===================================================== */
+
+@media (max-width: 480px) {
+
+  .iphone-nav__inner {
+    gap: 16px;
+  }
+
+  .iphone-nav__item {
+    min-width: 58px;
+  }
+
+  .iphone-nav__icon {
+    width: 52px;
+  }
+
+  .iphone-nav__icon img {
+    height: 35px;
+    max-width: 48px;
+  }
+}
