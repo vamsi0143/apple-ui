@@ -92,7 +92,8 @@ export default function SiteFooter() {
         </p>
 
         <div className="site-footer__bottom">
-          <p>Copyright © 2026 Apple Inc. All rights reserved.</p>
+          <p>Apple UI Recreation © 2026 — Educational Project
+            Not affiliated with Apple Inc.</p>
           <div className="site-footer__bottom-links">
             <a href="#">Privacy Policy</a>
             <a href="#">Terms of Use</a>
