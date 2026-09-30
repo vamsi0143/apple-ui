@@ -1,3 +1,4 @@
+
 import React from "react";
 import LegalFootnotes from "./LegalFootnotes";
 import "./SiteFooter.css";
@@ -5,15 +6,36 @@ import "./SiteFooter.css";
 const COLUMNS = [
   {
     heading: "Shop and Learn",
-    links: ["Store", "Mac", "iPad", "iPhone", "Watch", "AirPods", "TV & Home", "AirTag", "Accessories", "Gift Cards"],
+    links: [
+      "Store",
+      "Mac",
+      "iPad",
+      "iPhone",
+      "Watch",
+      "AirPods",
+      "TV & Home",
+      "AirTag",
+      "Accessories",
+      "Gift Cards",
+    ],
   },
   {
     heading: "Account",
-    links: ["Manage Your Apple ID", "Apple Store Account", "iCloud.com"],
+    links: ["Account Overview", "Order History", "Shopping Bag"],
   },
   {
     heading: "Entertainment",
-    links: ["Apple One", "Apple TV+", "Apple Music", "Apple Arcade", "Apple Fitness+", "Apple News+", "Apple Podcasts", "Apple Books", "App Store"],
+    links: [
+      "Apple One",
+      "Apple TV+",
+      "Apple Music",
+      "Apple Arcade",
+      "Apple Fitness+",
+      "Apple News+",
+      "Apple Podcasts",
+      "Apple Books",
+      "App Store",
+    ],
   },
   {
     heading: "Apple Wallet",
@@ -21,7 +43,19 @@ const COLUMNS = [
   },
   {
     heading: "Apple Store",
-    links: ["Find a Store", "Genius Bar", "Today at Apple", "Apple Camp", "Apple Store App", "Certified Refurbished", "Apple Trade In", "Financing", "Carrier Deals at Apple", "Order Status", "Shopping Help"],
+    links: [
+      "Find a Store",
+      "Genius Bar",
+      "Today at Apple",
+      "Apple Camp",
+      "Apple Store App",
+      "Certified Refurbished",
+      "Apple Trade In",
+      "Financing",
+      "Carrier Deals",
+      "Order Status",
+      "Shopping Help",
+    ],
   },
   {
     heading: "For Business",
@@ -33,7 +67,11 @@ const COLUMNS = [
   },
   {
     heading: "For Healthcare",
-    links: ["Apple in Healthcare", "Health on Apple Watch", "Health Records on iPhone"],
+    links: [
+      "Apple in Healthcare",
+      "Health on Apple Watch",
+      "Health Records on iPhone",
+    ],
   },
   {
     heading: "For Government",
@@ -41,11 +79,23 @@ const COLUMNS = [
   },
   {
     heading: "Apple Values",
-    links: ["Accessibility", "Education", "Environment", "Inclusion and Diversity", "Privacy", "Racial Equity and Justice", "Supplier Responsibility"],
+    links: [
+      "Accessibility",
+      "Education",
+      "Environment",
+      "Inclusion and Diversity",
+      "Privacy",
+      "Supplier Responsibility",
+    ],
   },
   {
-    heading: "About Apple",
-    links: ["Newsroom", "Apple Leadership", "Career Opportunities", "Investors", "Ethics & Compliance", "Events", "Contact Apple"],
+    heading: "About",
+    links: [
+      "Project Information",
+      "Design",
+      "Development",
+      "Contact",
+    ],
   },
 ];
 
@@ -56,20 +106,19 @@ export default function SiteFooter() {
         <LegalFootnotes />
 
         <div className="site-footer__breadcrumb">
-          <span className="site-footer__apple-mark"> </span>
-          <span className="site-footer__apple-mark"> </span>
-          <span className="site-footer__apple-mark"> </span>
-          <span className="site-footer__crumb">iPhone</span>
+          <span className="site-footer__apple-mark"></span>
+          <span className="site-footer__crumb">iPhone UI Recreation</span>
         </div>
 
         <div className="site-footer__grid">
           {COLUMNS.map((col) => (
             <div key={col.heading} className="site-footer__col">
               <h4 className="site-footer__heading">{col.heading}</h4>
+
               <ul className="site-footer__list">
                 {col.links.map((link) => (
                   <li key={link}>
-                    <a href="#" className="site-footer__link">
+                    <a href="#!" className="site-footer__link">
                       {link}
                     </a>
                   </li>
@@ -80,30 +129,34 @@ export default function SiteFooter() {
         </div>
 
         <p className="site-footer__more">
-          More ways to shop:{" "}
-          <a href="#" className="link-arrow">
-            Find an Apple Store
-          </a>{" "}
-          or{" "}
-          <a href="#" className="link-arrow">
-            other retailer
-          </a>{" "}
-          near you. Or call 1-800-MY-APPLE.
+          This website is a frontend UI recreation created for educational
+          and portfolio purposes.
         </p>
 
+        <div className="site-footer__disclaimer">
+          <strong>Apple UI Recreation — Educational Project</strong>
+          <span>
+            This project is an independent frontend recreation inspired by
+            Apple product interface designs. It is not affiliated with,
+            sponsored by, endorsed by, or officially connected with Apple Inc.
+          </span>
+        </div>
+
         <div className="site-footer__bottom">
-          <p>Apple UI Recreation © 2026 — Educational Project
-            Not affiliated with Apple Inc.</p>
+          <p>© 2026 Apple UI Recreation. Educational project only.</p>
+
           <div className="site-footer__bottom-links">
-            <a href="#">Privacy Policy</a>
-            <a href="#">Terms of Use</a>
-            <a href="#">Sales and Refunds</a>
-            <a href="#">Legal</a>
-            <a href="#">Site Map</a>
+            <a href="#!">Project Info</a>
+            <a href="#!">Privacy</a>
+            <a href="#!">Terms</a>
+            <a href="#!">Disclaimer</a>
+            <a href="#!">Site Map</a>
           </div>
-          <p>United States</p>
+
+          <p>Educational Project</p>
         </div>
       </div>
     </footer>
   );
 }
+

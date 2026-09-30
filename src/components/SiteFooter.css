@@ -105,3 +105,24 @@
     align-items: flex-start;
   }
 }
+
+.site-footer__disclaimer {
+  margin: 24px 0;
+  padding: 18px 20px;
+  border-radius: 12px;
+  background: #f5f5f7;
+  color: #6e6e73;
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+.site-footer__disclaimer strong {
+  display: block;
+  margin-bottom: 5px;
+  color: #1d1d1f;
+  font-size: 14px;
+}
+
+.site-footer__disclaimer span {
+  display: block;
+}
